@@ -36,26 +36,3 @@
     "webpack": "3.4.0"                
   }                                   
 }
-
-//我是注释================================================================
-
-//autoprefixer
-//可以把CSS转换成兼容各个浏览器的格式
-//比如body{columns:300px;}
-//转换后变成body{    -webkit-columns:300px;
-//                           columns:300px;}
-
-//postcss-simple-vars
-//可以把变量转换成具体的值
-//比如$gray=#999 body{color:gray} 
-//转换后就变成了color:#999
-
-//postcss-nested
-//可以把nested CSS转换成正常的CSS
-//比如 .box{a{color:#abc; padding:123px;}}
-//转换后变成 .box a{color:#abc; padding:123px;}
-
-//postcss-import
-//用来导入拼接CSS文件 例如 @import xxxxx
-//转入后变成部分CSS的源代码
-//gulp
