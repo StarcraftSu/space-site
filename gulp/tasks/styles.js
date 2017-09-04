@@ -3,8 +3,8 @@ var postcss=require("gulp-postcss");                //载入postcss
 var autoprefixer=require("autoprefixer");           //自动根据caniuse来生成兼容的CSS代码
 var cssvars=require("postcss-simple-vars");         //用来把变量用在CSS中
 var nested=require('postcss-nested');				//使代码可以寄宿，工整CSS开发
-var cssImport=require('postcss-import');		   //需要在postcss中第一个引入
-var mixins=require('postcss-mixins');
+var cssImport=require('postcss-import');		    //需要在postcss中第一个引入
+var mixins=require('postcss-mixins');               //动态改变字体大小
 gulp.task('styles',function(){
 	return gulp.src('./app/assets/styles/styles.css')
 	.pipe(postcss([cssImport, mixins, cssvars, autoprefixer, nested]))
@@ -13,6 +13,7 @@ gulp.task('styles',function(){
 		this.emit('end');
 	})
 	.pipe(gulp.dest('./app/temp/styles'));
+	console.log("CSS has changed!");
 });
 
 //gulp.src()
