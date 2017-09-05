@@ -1,10 +1,11 @@
 .wrapper{
 	padding-left: 18px;
 	padding-right: 18px;
-	max-width: 1200px;
+	max-width: 1236px;      /*因为是border-box所以需要把padding的那部分加上*/
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+
 	&--medium{
 		max-width: 976px;
 	}
@@ -12,6 +13,12 @@
 	.wrapper{
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	&--b-margin{
+		margin-bottom: 1.0rem;
+
+		@mixin atSmall{margin-bottom: 3.875rem;}
 	}
 }
 
