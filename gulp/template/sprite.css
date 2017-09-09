@@ -1,8 +1,16 @@
+
 {{#shapes}}
+	/*This will run only once*/
+	{{#first}}
+		.icon{
+			background-image:url('/assets/images/sprites{{{sprite}}}');
+		}
+	{{/first}}
+
 	.icon--{{base}}{
 		width:{{width.outer}}px;
 		height:{{height.outer}}px;
-		background-image:url('/temp/spirte/css/{{{sprite}}}');
+		
 		background-position:{{position.relative.xy}};
 	}
 
