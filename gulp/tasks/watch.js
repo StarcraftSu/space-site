@@ -18,11 +18,8 @@ gulp.task('watch',function(){
 		gulp.start('cssInject');
 	});
 
-<<<<<<< HEAD
-	watch('./app/assets/script/**/*',function(){
-=======
+
 	watch('./app/assets/scripts/**/*',function(){
->>>>>>> 7620d92224108d6b9b593e33c64c9e6b2f72bb97
 		gulp.start('jsInject');
 	})
 });
@@ -36,8 +33,5 @@ gulp.task('cssInject',['styles'],function(){
 gulp.task('jsInject',['scripts'],function(){
 	return gulp.src('./app/temp/scripts/app.js')
 	.pipe(browserSync.stream());
-<<<<<<< HEAD
+
 });
-=======
-});
->>>>>>> 7620d92224108d6b9b593e33c64c9e6b2f72bb97
