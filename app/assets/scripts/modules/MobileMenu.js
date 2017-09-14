@@ -17,7 +17,7 @@ class MobileMenu {
 
 	//具体方法
 	toggleTheMenu(){
-
+		
 		this.menuContent.toggleClass('site-header__menu-content--is-visible');
 
 	}
