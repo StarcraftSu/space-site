@@ -10338,10 +10338,15 @@ var _RevealOnScroll = __webpack_require__(3);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-var reavealOnScroll = new _RevealOnScroll2.default();
+new _RevealOnScroll2.default((0, _jquery2.default)('.feature-item'), '85%');
+new _RevealOnScroll2.default((0, _jquery2.default)('.testimonial'), '80%');
 
 /***/ }),
 /* 2 */
@@ -10427,10 +10432,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var RevealOnScroll = function () {
-	function RevealOnScroll() {
+	function RevealOnScroll(ele, offset) {
 		_classCallCheck(this, RevealOnScroll);
 
-		this.itemsToReaveal = (0, _jquery2.default)('.feature-item ');
+		this.itemsToReaveal = ele;
+		this.offsetPercentage = offset;
 		this.hideInit();
 		this.createWaypoints();
 	}
@@ -10443,6 +10449,7 @@ var RevealOnScroll = function () {
 	}, {
 		key: 'createWaypoints',
 		value: function createWaypoints() {
+			var that = this;
 			this.itemsToReaveal.each(function () {
 				var currentItem = this;
 				new Waypoint({ //创建锚点
@@ -10450,7 +10457,7 @@ var RevealOnScroll = function () {
 					handler: function handler() {
 						(0, _jquery2.default)(currentItem).addClass('reveal-item--is-visible');
 					},
-					offset: '80%' //延迟触发
+					offset: that.offsetPercentage //延迟触发
 				});
 			});
 		}
