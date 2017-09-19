@@ -6,7 +6,7 @@
 	}
 
 	&--blue{
-		background-color: $mainBlue;
+		background-color:$mainBlue;
 		color: #FFF;
 	}
 
@@ -27,10 +27,11 @@
 	}
 
 	&--testimonials{
-		background-color: #e0e6ef;
-
+		/*background-color: #e0e6ef;  浅蓝色*/
+		background-color: #E29C65;
+		
 		@mixin atLarge{
-			background:url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+			background:url("/assets/images/trip-bg.jpg") top center no-repeat;
 			background-size: cover;
 		}
 

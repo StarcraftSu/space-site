@@ -33,8 +33,9 @@
 			padding-right: 20px;
 		}
 	}
-
-	a{	
+	
+	/*A后面如果没有空格 &.是不会起作用的*/
+	a {	                                    
 		color: white;
 		text-decoration: none;
 		font-weight: 300;
@@ -48,7 +49,11 @@
 			font-size:1rem;
 			padding:12px 0;
 			background-color: transparent;
+
+			&.is-current-link{
+				color: #fabb69;
+			}
 		}
 
-	}
+	}	
 }

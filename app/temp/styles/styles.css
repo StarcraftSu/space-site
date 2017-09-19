@@ -453,6 +453,8 @@ template {
 body{
 	font-family: 'Roboto',sans-serif;
 	color: #333;
+	background-color:#181E2A;
+/*	background-image: url('../../assets/images/star-sky-background.jpg');*/
 }
 
 img {
@@ -470,10 +472,12 @@ a {
 }
 
 .large-hero{
-	border-bottom: 10px solid #2f5572;
+	border-bottom: 10px solid #181c1f;
 	position: relative;
 
 }
+
+/*	font-family: 'Roboto Condensed',sans-serif;*/
 
 .large-hero__image{
 	 	display: block;
@@ -483,8 +487,8 @@ a {
 	 	padding-top: 88px;
 		position:absolute;
 		top:50%;
-		-webkit-transform: translateY(-50%);
-		        transform: translateY(-50%);
+		-webkit-transform: translateY(-55%);
+		        transform: translateY(-55%);
 		left: 0;
 		width: 100%;
 		text-align: center;
@@ -499,9 +503,10 @@ a {
 
 .large-hero__title{
 		font-weight: 300;
-		color: #2f5572;
+		color: #EEE;
 		font-size:2.4rem;
 		margin: 0;
+		letter-spacing: 1px;
 	}
 
 @media(min-width: 530px){
@@ -513,7 +518,7 @@ a {
 
 .large-hero__subtitle{
 		font-weight: 300;
-		color: #2f5572;
+		color: #EEE;
 		font-size:1.5rem;
 		margin: 0;
 	}
@@ -635,7 +640,7 @@ a {
 	}
 
 .page-section--blue{
-		background-color: #2f5572;
+		background-color:#2f5572;
 		color: #FFF;
 	}
 
@@ -662,7 +667,8 @@ a {
 	}
 
 .page-section--testimonials{
-		background-color: #e0e6ef;
+		/*background-color: #e0e6ef;  浅蓝色*/
+		background-color: #E29C65;
 
 
 	}
@@ -670,7 +676,7 @@ a {
 @media(min-width: 1010px){
 
 .page-section--testimonials{
-			background:url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+			background:url("/assets/images/trip-bg.jpg") top center no-repeat;
 			background-size: cover
 
 
@@ -680,7 +686,8 @@ a {
 .headline{
 	font-weight: 300;
 	font-size: 1.9rem;
-	color: #2f5572;
+	color: #EEE;
+	font-family: 'Roboto Condensed',sans-serif;
 }
 
 @media(min-width: 530px){
@@ -694,8 +701,8 @@ a {
 		text-align: center;
 	}
 
-.headline--orange{
-		color: #d59541;
+.headline--white{
+    color: #EEE;
 	}
 
 .headline--small{
@@ -710,13 +717,14 @@ a {
 	}
 
 .headline--narrow{
-		max-width: 500px;
+		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
+		line-height: 2.5rem;
 	}
 
 .headline--light{
-		font-weight: 100;
+		font-weight: 200;
 	}
 
 .headline strong{
@@ -733,6 +741,15 @@ a {
 
 .headline--no-t-margin{
 		margin-top: 0;
+	}
+
+.headline__content-white-color-font{
+		color: white;
+	}
+
+.headline__float-picture{
+		-webkit-box-shadow: 10px 10px 5px rgba(100,100,101,.1);
+		        box-shadow: 10px 10px 5px rgba(100,100,101,.1);
 	}
 
 .row::after{
@@ -922,8 +939,9 @@ a {
     }
 	}
 
-.section-title--blue{
-    	color: #2f5572;
+.section-title--white{
+    	/*color: $mainBlue;*/
+    	color: white;
     }
 
 .feature-item{
@@ -1016,14 +1034,14 @@ a {
 /*This will run only once*/
 
 .icon{
-			background-image:url('/assets/images/sprites/sprite-69f19c2e.svg');
+			background-image:url('/assets/images/sprites/sprite-bb28c98d.svg');
 		}
 
 .icon--clear-view-escapes{
 		width:142.4px;
 		height:59.53px;
 		
-		background-position:0 0;
+		background-position:99.90849352687327% 0;
 	}
 
 /*This will run only once*/
@@ -1032,7 +1050,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:99.70443349753694% 0;
+		background-position:92.7747723132969% 13.786830357142858%;
 	}
 
 /*This will run only once*/
@@ -1041,7 +1059,7 @@ a {
 		width:21.23px;
 		height:42.01px;
 		
-		background-position:26.040607071652357% 45.795830448496034%;
+		background-position:99.81565083233255% 6.484820096079478%;
 	}
 
 /*This will run only once*/
@@ -1050,7 +1068,7 @@ a {
 		width:56px;
 		height:64px;
 		
-		background-position:0 99.56481481481481%;
+		background-position:92.10370705244122% 6.643973214285714%;
 	}
 
 /*This will run only once*/
@@ -1059,7 +1077,16 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:27.586206896551722% 99.56481481481481%;
+		background-position:97.87495446265937% 6.643973214285714%;
+	}
+
+/*This will run only once*/
+
+.icon--hurricane{
+		width:1018.667px;
+		height:960px;
+		
+		background-position:0 0;
 	}
 
 /*This will run only once*/
@@ -1068,7 +1095,7 @@ a {
 		width:42.01px;
 		height:42.01px;
 		
-		background-position:63.2917018534157% 49.234556504346486%;
+		background-position:90.9532227966321% 34.37183411584004%;
 	}
 
 /*This will run only once*/
@@ -1077,7 +1104,7 @@ a {
 		width:64px;
 		height:48px;
 		
-		background-position:0 48.00806451612903%;
+		background-position:98.6035519125683% 13.544956140350877%;
 	}
 
 /*This will run only once*/
@@ -1086,7 +1113,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:99.70443349753694% 59.25925925925926%;
+		background-position:92.7747723132969% 20.9296875%;
 	}
 
 /*This will run only once*/
@@ -1095,7 +1122,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:59.11330049261084% 99.56481481481481%;
+		background-position:98.6035519125683% 20.9296875%;
 	}
 
 /*This will run only once*/
@@ -1104,7 +1131,7 @@ a {
 		width:51.78px;
 		height:42.06px;
 		
-		background-position:94.04330452560171% 98.50700323226104%;
+		background-position:97.1579506764425% 27.401573087565634%;
 	}
 
 /*This will run only once*/
@@ -1113,7 +1140,7 @@ a {
 		width:60px;
 		height:64px;
 		
-		background-position:68.79227053140097% 0;
+		background-position:92.43802177858439% 28.072544642857142%;
 	}
 
 /*This will run only once*/
@@ -1122,7 +1149,7 @@ a {
 		width:34.75px;
 		height:42px;
 		
-		background-position:36.69752421959096% 45.792307692307695%;
+		background-position:94.09421157684632% 34.371459694989106%;
 	}
 
 .site-footer{
@@ -1163,8 +1190,13 @@ a {
 @media(min-width: 800px){
 
 .site-header{
-		background-color: rgba(47,85,114,.3) /*Top bar background-color */
+		background-color: rgba(47,85,114,.3); /*Top bar background-color */
+		position: fixed
 }
+
+		.site-header--dark{
+			background-color: rgba(23,51,72, .85);
+		}
 	}
 
 @media(min-width: 800px){
@@ -1191,8 +1223,16 @@ a {
 .site-header__logo{
 			left: auto;
 			-webkit-transform: translateX(0);
-			        transform: translateX(0)
+			        transform: translateX(0);
+			-webkit-transition: -webkit-transform .5s ease-out;
+			transition: -webkit-transform .5s ease-out;
+			transition: transform .5s ease-out;
+			transition: transform .5s ease-out, -webkit-transform .5s ease-out
 	}
+			.site-header--dark .site-header__logo {
+				-webkit-transform: scale(.57);
+				        transform: scale(.57);
+			}
 	}
 
 .site-header__logo__graphic{
@@ -1309,13 +1349,13 @@ a {
 		}
 
 .primary-nav{
-	padding-top: 15px;
+	padding-top: 15px;	
 }
 
 @media(min-width: 800px){
 
 .primary-nav{
-		padding-top: 0
+		padding-top: 0	
 }
 	}
 
@@ -1363,7 +1403,9 @@ a {
 	}
 	}
 
-.primary-nav a{	
+/*A后面如果没有空格 &.是不会起作用的*/
+
+.primary-nav a {	                                    
 		color: white;
 		text-decoration: none;
 		font-weight: 300;
@@ -1376,12 +1418,16 @@ a {
 
 @media(min-width: 800px){
 
-.primary-nav a{
+.primary-nav a {
 			font-size:1rem;
 			padding:12px 0;
 			background-color: transparent
 
 	}
+
+			.primary-nav a.is-current-link{
+				color: #fabb69;
+			}
 	}
 
 .reveal-item{

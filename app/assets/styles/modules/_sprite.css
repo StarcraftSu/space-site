@@ -1,14 +1,14 @@
 
 	/*This will run only once*/
 		.icon{
-			background-image:url('/assets/images/sprites/sprite-69f19c2e.svg');
+			background-image:url('/assets/images/sprites/sprite-bb28c98d.svg');
 		}
 
 	.icon--clear-view-escapes{
 		width:142.4px;
 		height:59.53px;
 		
-		background-position:0 0;
+		background-position:99.90849352687327% 0;
 	}
 
 	/*This will run only once*/
@@ -17,7 +17,7 @@
 		width:64px;
 		height:64px;
 		
-		background-position:99.70443349753694% 0;
+		background-position:92.7747723132969% 13.786830357142858%;
 	}
 
 	/*This will run only once*/
@@ -26,7 +26,7 @@
 		width:21.23px;
 		height:42.01px;
 		
-		background-position:26.040607071652357% 45.795830448496034%;
+		background-position:99.81565083233255% 6.484820096079478%;
 	}
 
 	/*This will run only once*/
@@ -35,7 +35,7 @@
 		width:56px;
 		height:64px;
 		
-		background-position:0 99.56481481481481%;
+		background-position:92.10370705244122% 6.643973214285714%;
 	}
 
 	/*This will run only once*/
@@ -44,7 +44,16 @@
 		width:64px;
 		height:64px;
 		
-		background-position:27.586206896551722% 99.56481481481481%;
+		background-position:97.87495446265937% 6.643973214285714%;
+	}
+
+	/*This will run only once*/
+
+	.icon--hurricane{
+		width:1018.667px;
+		height:960px;
+		
+		background-position:0 0;
 	}
 
 	/*This will run only once*/
@@ -53,7 +62,7 @@
 		width:42.01px;
 		height:42.01px;
 		
-		background-position:63.2917018534157% 49.234556504346486%;
+		background-position:90.9532227966321% 34.37183411584004%;
 	}
 
 	/*This will run only once*/
@@ -62,7 +71,7 @@
 		width:64px;
 		height:48px;
 		
-		background-position:0 48.00806451612903%;
+		background-position:98.6035519125683% 13.544956140350877%;
 	}
 
 	/*This will run only once*/
@@ -71,7 +80,7 @@
 		width:64px;
 		height:64px;
 		
-		background-position:99.70443349753694% 59.25925925925926%;
+		background-position:92.7747723132969% 20.9296875%;
 	}
 
 	/*This will run only once*/
@@ -80,7 +89,7 @@
 		width:64px;
 		height:64px;
 		
-		background-position:59.11330049261084% 99.56481481481481%;
+		background-position:98.6035519125683% 20.9296875%;
 	}
 
 	/*This will run only once*/
@@ -89,7 +98,7 @@
 		width:51.78px;
 		height:42.06px;
 		
-		background-position:94.04330452560171% 98.50700323226104%;
+		background-position:97.1579506764425% 27.401573087565634%;
 	}
 
 	/*This will run only once*/
@@ -98,7 +107,7 @@
 		width:60px;
 		height:64px;
 		
-		background-position:68.79227053140097% 0;
+		background-position:92.43802177858439% 28.072544642857142%;
 	}
 
 	/*This will run only once*/
@@ -107,6 +116,6 @@
 		width:34.75px;
 		height:42px;
 		
-		background-position:36.69752421959096% 45.792307692307695%;
+		background-position:94.09421157684632% 34.371459694989106%;
 	}
 
