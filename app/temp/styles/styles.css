@@ -581,10 +581,15 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+
 }
 
 .wrapper--medium{
 		max-width: 976px;
+	}
+
+.wrapper--narrow{
+		max-width: 470px;
 	}
 
 .wrapper--no-padding-until-medium{
@@ -944,6 +949,15 @@ a {
     	color: white;
     }
 
+.section-title--blue{
+    	/*color: $mainBlue;*/
+    	color:#2f5572;
+    }
+
+.section-title--less-margin{
+    	margin-bottom: 1.3rem;
+    }
+
 .feature-item{
 	position: relative;
 	paddiing-bottom:2.5rem;
@@ -1034,14 +1048,14 @@ a {
 /*This will run only once*/
 
 .icon{
-			background-image:url('/assets/images/sprites/sprite-bb28c98d.svg');
+			background-image:url('/assets/images/sprites/sprite-69f19c2e.svg');
 		}
 
 .icon--clear-view-escapes{
 		width:142.4px;
 		height:59.53px;
 		
-		background-position:99.90849352687327% 0;
+		background-position:0 0;
 	}
 
 /*This will run only once*/
@@ -1050,7 +1064,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:92.7747723132969% 13.786830357142858%;
+		background-position:99.70443349753694% 0;
 	}
 
 /*This will run only once*/
@@ -1059,7 +1073,7 @@ a {
 		width:21.23px;
 		height:42.01px;
 		
-		background-position:99.81565083233255% 6.484820096079478%;
+		background-position:26.040607071652357% 45.795830448496034%;
 	}
 
 /*This will run only once*/
@@ -1068,7 +1082,7 @@ a {
 		width:56px;
 		height:64px;
 		
-		background-position:92.10370705244122% 6.643973214285714%;
+		background-position:0 99.56481481481481%;
 	}
 
 /*This will run only once*/
@@ -1077,16 +1091,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:97.87495446265937% 6.643973214285714%;
-	}
-
-/*This will run only once*/
-
-.icon--hurricane{
-		width:1018.667px;
-		height:960px;
-		
-		background-position:0 0;
+		background-position:27.586206896551722% 99.56481481481481%;
 	}
 
 /*This will run only once*/
@@ -1095,7 +1100,7 @@ a {
 		width:42.01px;
 		height:42.01px;
 		
-		background-position:90.9532227966321% 34.37183411584004%;
+		background-position:63.2917018534157% 49.234556504346486%;
 	}
 
 /*This will run only once*/
@@ -1104,7 +1109,7 @@ a {
 		width:64px;
 		height:48px;
 		
-		background-position:98.6035519125683% 13.544956140350877%;
+		background-position:0 48.00806451612903%;
 	}
 
 /*This will run only once*/
@@ -1113,7 +1118,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:92.7747723132969% 20.9296875%;
+		background-position:99.70443349753694% 59.25925925925926%;
 	}
 
 /*This will run only once*/
@@ -1122,7 +1127,7 @@ a {
 		width:64px;
 		height:64px;
 		
-		background-position:98.6035519125683% 20.9296875%;
+		background-position:59.11330049261084% 99.56481481481481%;
 	}
 
 /*This will run only once*/
@@ -1131,7 +1136,7 @@ a {
 		width:51.78px;
 		height:42.06px;
 		
-		background-position:97.1579506764425% 27.401573087565634%;
+		background-position:94.04330452560171% 98.50700323226104%;
 	}
 
 /*This will run only once*/
@@ -1140,7 +1145,7 @@ a {
 		width:60px;
 		height:64px;
 		
-		background-position:92.43802177858439% 28.072544642857142%;
+		background-position:68.79227053140097% 0;
 	}
 
 /*This will run only once*/
@@ -1149,7 +1154,7 @@ a {
 		width:34.75px;
 		height:42px;
 		
-		background-position:94.09421157684632% 34.371459694989106%;
+		background-position:36.69752421959096% 45.792307692307695%;
 	}
 
 .site-footer{
@@ -1443,3 +1448,55 @@ a {
 		-webkit-transform: scale(1);
 		        transform: scale(1);
 	}
+
+.modal{
+	position: fixed;
+	/*最靠上*/
+	z-index: 5;
+	background-color: rgba(255,255,255,0.94);
+	/*占全屏*/
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.modal__description{
+		text-align: center;
+		font-size:1.3rem;
+		font-weight: 300;
+		line-height: 1.65rem;
+
+	}
+
+.social-icons{
+	text-align: center;
+
+}
+
+.social-icons__icon{
+		background-color: #d59541;
+		display: inline-block;
+		margin:0 5px 5px 5px;
+		width: 33%;
+		height: 72px;
+		position: relative;
+	}
+
+@media(min-width: 530px){
+
+.social-icons__icon{
+			width: 72px;
+			height: 72px;
+			margin:0 5px
+	}
+	}
+
+.social-icons__icon span{
+			display: block;
+			position:absolute;
+			left: 50%;
+			top:50%;
+			-webkit-transform: translate(-50%,-50%);
+			        transform: translate(-50%,-50%);			
+		}

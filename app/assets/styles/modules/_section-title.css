@@ -32,4 +32,13 @@
     	/*color: $mainBlue;*/
     	color: white;
     }
+
+    &--blue{
+    	/*color: $mainBlue;*/
+    	color:$mainBlue;
+    }
+
+    &--less-margin{
+    	margin-bottom: 1.3rem;
+    }
 }
