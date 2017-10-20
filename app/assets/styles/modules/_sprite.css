@@ -1,7 +1,7 @@
 
 	/*This will run only once*/
-	.icon{
-			background-image:url('/assets/images/sprites/sprite-69f19c2e.svg');
+		.icon{
+			background-image:url('../../docs/assets/images/sprites/sprite-69f19c2e.svg');
 		}
 
 	.icon--clear-view-escapes{
